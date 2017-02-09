@@ -1,0 +1,40 @@
+table(cellspacing='0', cellpadding='0', border='0', style='border-collapse:collapse;')
+	tr
+		td(width='600', style='padding-top:0px;padding-left:30px;padding-right:30px;padding-bottom:0px;background-color:#ffffff;')
+			table(cellspacing='0', cellpadding='0', border='0', style='border-collapse:collapse;')
+				tr
+					td(width='540', valign='middle', style='padding-top:20px;padding-bottom:20px;')
+						table(cellspacing='0', cellpadding='0', border='0', style='border-collapse:collapse;')
+							tr
+								td(width='42', align='left', valign='top', style='text-align:left;')
+									a(href='')
+										img(width='32', height='32', alt='Linkagoal', src='#{post.user.profile.small}', style='border-style:none;border-radius:16px; width: 32px; height: 32px;')
+								td(width='498', align='left', valign='top', style="padding-top:5px;text-align:left;font-size:15px;color:#666666;font-family: 'Geomanist-Regular','Helvetica Neue', Helvetica, 'Segoe UI', 'Lucida Grande', Arial, sans-serif;line-height:20px;")
+									a(href='#{base_url}#{post.user.link}', style="color:#2c2d30;text-decoration:none;font-family: 'Geomanist-Book','Helvetica Neue', Helvetica, 'Segoe UI', 'Lucida Grande', Arial, sans-serif;") #{post.user.name}
+									|  Added a new progress update on the goal you're connected with 
+									a(href='#{base_url}#{goal.link}', style="color:#2c2d30;text-decoration:underline;font-family: 'Geomanist-Regular','Helvetica Neue', Helvetica, 'Segoe UI', 'Lucida Grande', Arial, sans-serif;text-decoration:underline;") #{goal.name}
+	tr
+		td(width='600', style='padding-top:0px;padding-left:0px;padding-right:0px;padding-bottom:0px;background-color:#ffffff;')
+			table(cellspacing='0', cellpadding='0', border='0', style='border-collapse:collapse;')
+				tr
+					td(width='600', style='padding-top:0px;padding-left:30px;padding-right:30px;padding-bottom:0px;background-color:#ffffff;')
+						table(cellspacing='0', cellpadding='0', border='0', style='border-collapse:collapse;')
+							tr
+								td(width='540', valign='middle', align='left', style="padding-top:20px;padding-bottom:0px;text-align:left;font-size:14px;color:#2c2d30;font-family: 'Geomanist-Regular','Helvetica Neue', Helvetica, 'Segoe UI', 'Lucida Grande', Arial, sans-serif;")
+									span(style="font-size:14px;line-height:20px;color:#2c2d30;font-family: 'Geomanist-Book','Helvetica Neue', Helvetica, 'Segoe UI', 'Lucida Grande', Arial, sans-serif;") Progress Update:
+										| !{post.text}
+
+				tr
+					td(width='600', style='padding-top:0px;padding-left:30px;padding-right:30px;padding-bottom:0px;background-color:#ffffff;')
+						table(cellspacing='0', cellpadding='0', border='0', style='border-collapse:collapse;')
+							tr
+								td(width='540', valign='middle', align='left', style='padding-top:0px;padding-bottom:0px;text-align:left;')
+								if post.media
+									a(href='', style='text-decoration:none;')
+										img(alt='Linkagoal', src='#{post.media.files[0].source.medium.src}', width='540', height='', border='0', style='display: block; width: 100%; height: auto; max-width: 540px; max-height: 304px;')
+				tr
+					td(width='600', style='padding-top:2px;padding-left:30px;padding-right:30px;padding-bottom:40px;background-color:#ffffff;')
+						table(cellspacing='0', cellpadding='0', border='0', style='border-collapse:collapse;')
+							tr
+								td(width='540', valign='middle', align='center', style="padding-top:10px;padding-bottom:10px;text-align:center;font-size:14px;color:#ffffff;background-color:#1bbc9b;font-family: 'Geomanist-Regular','Helvetica Neue', Helvetica, 'Segoe UI', 'Lucida Grande', Arial, sans-serif;")
+									a(href='#{post.link}', style="color:#ffffff;text-decoration:none;font-family: 'Geomanist-Regular','Helvetica Neue', Helvetica, 'Segoe UI', 'Lucida Grande', Arial, sans-serif;") View Update

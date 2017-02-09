@@ -1,0 +1,52 @@
+tr
+    td(width='600', style='padding-top:0px;padding-left:30px;padding-right:30px;padding-bottom:0px;background-color:#ffffff;')
+        table(cellspacing='0', cellpadding='0', border='0', style='border-collapse:collapse;')
+            tr
+                td(width='540', valign='middle', style='padding-top:20px;padding-bottom:20px;')
+                    table(cellspacing='0', cellpadding='0', border='0', style='border-collapse:collapse;')
+                        tr
+                            td(width='42', align='left', valign='top', style='text-align:left;')
+                                a(href="")
+                                    img(width='32', height='32', alt='Linkagoal', src='#{goal.user.profile.small}', style='border-style:none;border-radius:16px; width: 32px; height: 32px;')
+                            td(width='498', align='left', valign='top', style="padding-top:5px;text-align:left;font-size:15px;color:#666666;font-family: 'Geomanist-Regular','Helvetica Neue', Helvetica, 'Segoe UI', 'Lucida Grande', Arial, sans-serif;line-height:20px;")
+                                a(href="#{base_url}#{goal.user.link}", style="color:#2c2d30;text-decoration:none;font-family: 'Geomanist-Book','Helvetica Neue', Helvetica, 'Segoe UI', 'Lucida Grande', Arial, sans-serif;") #{goal.user.name}
+                                |  has achieved a milestone on the goal you are connected with 
+                                a(href="#{base_url}#{goal.link}", style="color:#2c2d30;text-decoration:underline;font-family: 'Geomanist-Regular','Helvetica Neue', Helvetica, 'Segoe UI', 'Lucida Grande', Arial, sans-serif;text-decoration:underline;") #{goal.name}
+tr
+    td(width='600', style='padding-top:0px;padding-left:0px;padding-right:0px;padding-bottom:0px;background-color:#ffffff;')
+        table(cellspacing='0', cellpadding='0', border='0', style='border-collapse:collapse;')
+            tr
+                td(width='600', style='padding-top:0px;padding-left:30px;padding-right:30px;padding-bottom:0px;background-color:#ffffff;')
+                    table(cellspacing='0', cellpadding='0', border='0', style='border-collapse:collapse;')
+                        tr
+                            td(width='540', valign='middle', align='left', style="padding-top:20px;padding-bottom:0px;text-align:left;font-size:14px;color:#2c2d30;font-family: 'Geomanist-Regular','Helvetica Neue', Helvetica, 'Segoe UI', 'Lucida Grande', Arial, sans-serif;")
+                                span(style="font-size:14px;line-height:20px;color:#2c2d30;font-family: 'Geomanist-Book','Helvetica Neue', Helvetica, 'Segoe UI', 'Lucida Grande', Arial, sans-serif;") Milestone:
+                                |  #{milestone.text}
+            tr
+                td(width='600', style='padding-top:20px;padding-left:30px;padding-right:30px;padding-bottom:20px;background-color:#ffffff;')
+                    table(cellspacing='0', cellpadding='0', border='0', style='border-collapse:collapse;')
+                        tr
+                            td(width='540', valign='middle', align='center', style='padding-top:30px;padding-bottom:30px;padding-left:30px;padding-right:30px;text-align:center;font-size:16px;border:1px solid #e4e4e4;')
+                                table(cellspacing='0', cellpadding='0', border='0', style='border-collapse:collapse;')
+                                    tr
+                                        td(width='480', valign='middle', align='center', style='text-align:center;')
+                                            a(href=' ')
+                                                img(width='64 ', height='64 ', alt='Milestone', src='https://marketing-image-production.s3.amazonaws.com/uploads/4761ed9986a4196642b16dc3a021e37e065e878191f5a87dd4b37bc7c42deb99d1282a3fc2b1e23662b814d7bd80a25f0c8cee00480b49f0429770dcc27f89fe.png', style='border-style:none;border-radius:32px; width: 64px; height: 64px;')
+                                    tr
+                                        td(width='480', valign='middle', align='center', style="padding-top:20px;padding-bottom:10px;text-align:center;font-size:15px;line-height:20px;color:#2c2d30;font-family: 'Geomanist-Regular','Helvetica Neue', Helvetica, 'Segoe UI', 'Lucida Grande', Arial, sans-serif;border-bottom:1px solid #e4e4e4")
+                                            | Milestone Achieved
+                                    tr
+                                        td(width='480', valign='middle', align='center', style="padding-top:10px;padding-bottom:0px;text-align:center;font-size:15px;line-height:20px;color:#2c2d30;font-family: 'Geomanist-Regular','Helvetica Neue', Helvetica, 'Segoe UI', 'Lucida Grande', Arial, sans-serif;")
+                                            | #{post.text}
+            tr
+                td(width='600 ', style='padding-top:2px;padding-left:30px;padding-right:30px;padding-bottom:10px;background-color:#ffffff; ')
+                    table(cellspacing='0 ', cellpadding='0 ', border='0 ', style='border-collapse:collapse; ')
+                        tr
+                            td(width='540 ', valign='middle ', align='center ', style="padding-top:5px;padding-bottom:40px;text-align:center;font-size:14px;background-color:#ffffff;font-family: 'Geomanist-Regular', 'Helvetica Neue', Helvetica, 'Segoe UI', 'Lucida Grande', Arial, sans-serif; ")
+                                table(cellspacing='0 ', cellpadding='0 ', border='0 ', style='border-collapse:collapse; ')
+                                    tr
+                                        td(width='192 ') 
+                                        td(width='156 ', valign='middle ', align='center ', style="text-align:center;padding-top:8px;padding-left:15px;padding-right:15px;padding-bottom:8px;background-color:#1bbc9b;font-family:helvetica, arial, sans-serif;font-family: 'Geomanist-Regular', 'Helvetica Neue', Helvetica, 'Segoe UI', 'Lucida Grande', Arial, sans-serif;font-size:14px;color: #ffffff;border-radius:3px; ")
+                                            a(href='#{post.link}', style="color:#ffffff;text-decoration:none;font-family: 'Geomanist-Regular', 'Helvetica Neue', Helvetica, 'Segoe UI', 'Lucida Grande', Arial, sans-serif; ") View Milestone
+                                        td(width='192 ') 
+// Content

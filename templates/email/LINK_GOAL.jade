@@ -1,0 +1,45 @@
+tr
+    td(width='600', style='padding-top:0px;padding-left:30px;padding-right:30px;padding-bottom:0px;background-color:#ffffff;')
+        table(cellspacing='0', cellpadding='0', border='0', style='border-collapse:collapse;')
+            tr
+                td(width='540', valign='middle', style='padding-top:20px;padding-bottom:20px;')
+                    table(cellspacing='0', cellpadding='0', border='0', style='border-collapse:collapse;')
+                        tr
+                            td(width='42', align='left', valign='top', style='text-align:left;')
+                                a(href="")
+                                    img(width='32', height='32', alt='Linkagoal', src='#{goal1.user.profile.small}', style='border-style:none;border-radius:16px; width: 32px; height: 32px;')
+                            td(width='498', align='left', valign='top', style="text-align:left;font-size:15px;color:#666666;font-family: 'Geomanist-Regular','Helvetica Neue', Helvetica, 'Segoe UI', 'Lucida Grande', Arial, sans-serif;line-height:20px;")
+                                a(href="#{goal1.user.link}", style="color:#2c2d30;text-decoration:none;font-family: 'Geomanist-Book','Helvetica Neue', Helvetica, 'Segoe UI', 'Lucida Grande', Arial, sans-serif;") #{goal1.user.name}
+                                |&nbsp;has linked your goal 
+                                a(href="#{goal2.link}", style="color:#2c2d30;text-decoration:underline;font-family: 'Geomanist-Regular','Helvetica Neue', Helvetica, 'Segoe UI', 'Lucida Grande', Arial, sans-serif;") #{goal2.name}
+                                |&nbsp;with
+tr
+    td(width='600', style='padding-top:0px;padding-left:0px;padding-right:0px;padding-bottom:0px;background-color:#ffffff;')
+        table(cellspacing='0', cellpadding='0', border='0', style='border-collapse:collapse;')
+            tr
+                td(width='600', style='padding-top:0px;padding-left:30px;padding-right:30px;padding-bottom:0px;background-color:#ffffff;')
+                    table(cellspacing='0', cellpadding='0', border='0', style='border-collapse:collapse;')
+                        tr
+                            td(width='540', valign='middle', align='left', style="padding-top:20px;padding-bottom:10px;text-align:left;font-size:14px;line-height:20px;color:#2c2d30;font-family: 'Geomanist-Regular','Helvetica Neue', Helvetica, 'Segoe UI', 'Lucida Grande', Arial, sans-serif;")
+                                a(href="#{goal1.link}", style="color:#2c2d30;text-decoration:none;font-family: 'Geomanist-Regular','Helvetica Neue', Helvetica, 'Segoe UI', 'Lucida Grande', Arial, sans-serif;") #{goal1.name}
+        if 'goal_linked_with_image' == "goal_linked_with_image"
+            tr
+                td(width='600', style='padding-top:0px;padding-left:30px;padding-right:30px;padding-bottom:0px;background-color:#ffffff;')
+                    table(cellspacing='0', cellpadding='0', border='0', style='border-collapse:collapse;')
+                        tr
+                            td(width='540', valign='middle', align='left', style='padding-top:0px;padding-bottom:0px;text-align:left;')
+                                a(href='', style='text-decoration:none;')
+                                    img(alt='Linkagoal', src='#{goal1.cover.medium}', width='540', height='', border='0', style='display: block; width: 100%; height: auto; max-width: 540px; max-height: 304px;')
+            tr
+                td(width='600', style='padding-top:2px;padding-left:30px;padding-right:30px;padding-bottom:40px;background-color:#ffffff;')
+                    table(cellspacing='0', cellpadding='0', border='0', style='border-collapse:collapse;')
+                        tr
+                            td(width='540', valign='middle', align='center', style="padding-top:10px;padding-bottom:10px;text-align:center;font-size:14px;color:#ffffff;background-color:#1bbc9b;font-family: 'Geomanist-Regular','Helvetica Neue', Helvetica, 'Segoe UI', 'Lucida Grande', Arial, sans-serif;")
+                                a(href='#{goal1.link}', style="color:#ffffff;text-decoration:none;font-family: 'Geomanist-Regular','Helvetica Neue', Helvetica, 'Segoe UI', 'Lucida Grande', Arial, sans-serif;") View
+        else if 'email_type' == "goal_linked_without_image"
+            tr
+                td(width='600', style='padding-top:2px;padding-left:30px;padding-right:30px;padding-bottom:40px;background-color:#ffffff;')
+                    table(cellspacing='0', cellpadding='0', border='0', style='border-collapse:collapse;')
+                        tr
+                            td(width='540', valign='middle', align='center', style="padding-top:10px;padding-bottom:10px;text-align:center;font-size:14px;color:#ffffff;background-color:#1bbc9b;font-family: 'Geomanist-Regular','Helvetica Neue', Helvetica, 'Segoe UI', 'Lucida Grande', Arial, sans-serif;")
+                                a(href='#{goal1.link}', style="color:#ffffff;text-decoration:none;font-family: 'Geomanist-Regular','Helvetica Neue', Helvetica, 'Segoe UI', 'Lucida Grande', Arial, sans-serif;") View
